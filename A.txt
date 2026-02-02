@@ -47,4 +47,55 @@ Rich built-in methods (add, remove, contains)
 
 Flexible & easy to use
 
-                                                                         🆚 Array vs List (Simple Table)
+                                         🆚 Array vs List (Simple Table)
+Feature
+ size
+Can grow/shrink
+Built-in methods
+Performance
+Data type
+Framework	Array
+Fixed
+❌ No
+❌ Very few
+Faster
+Primitive + Object
+Core Java	List
+Dynamic
+✅ Yes
+✅ Many
+Slightly slower
+Objects only
+Collections Framework
+
+⚠️ Important Interview Point
+
+❌ This List is NOT fully dynamic
+List<Integer> list = Arrays.asList(1, 2, 3);
+list.add(4); // ❌ UnsupportedOperationException
+
+✅ Correct dynamic List
+List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3));
+list.add(4); // ✅ works
+
+🧠 When to use what?
+✔ Use Array when:
+
+Size is fixed
+
+Performance is critical
+
+Memory optimization needed
+
+✔ Use List when:
+
+Size is unknown
+
+Need add/remove operations
+
+Clean & readable code needed
+
+🏁 One-line Summary
+
+Array = Fixed size, fast
+List = Dynamic size, flexible
